@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	
 	//2. About yourself cannot be more than 140 characters long.
-	
+	//can add HTML attribute maxlength="140" to <textarea> element as an alternate easier way.
+
 	var textBox = document.getElementsByTagName("textarea")[0];
 	textBox.addEventListener("keyup", function() {
 		if (textBox.value.length > 140) {
